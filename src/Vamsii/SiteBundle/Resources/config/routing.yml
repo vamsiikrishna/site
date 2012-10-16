@@ -1,0 +1,3 @@
+vamsii_site_homepage:
+    pattern:  /
+    defaults: { _controller: VamsiiSiteBundle:Default:index }

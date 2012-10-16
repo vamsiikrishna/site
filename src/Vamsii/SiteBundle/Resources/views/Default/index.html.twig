@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Vamsi krishan personal website">
+    <meta name="author" content="Vamsi Krishna">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+
+    <title>Vamsii.com - Welcome</title>
+    {% stylesheets '@VamsiiSiteBundle/Resources/public/css/*' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+{% javascripts '@VamsiiSiteBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+        <script type="text/javascript">
+    function getWindowsSize(){
+        $("#sizeX").html('W: '+$(window).width());
+        $("#sizeY").html('H: '+$(window).height());
+    }
+    $(function(){
+        getWindowsSize();
+        $(window).resize(function(){
+            getWindowsSize()
+        });
+    })
+</script>
+</head>
+
+<body class="modern-ui">
+    <div class="page">
+<div class="navigation-bar">
+    <div class="navigation-bar-inner">
+        <span class="menu-pull"></span>
+
+        <div class="brand">
+            <a href="/"><span class="metro-ui-logo place-left"></span></a>
+            <a href="/"><span class="name">Vamsi <sup class="fg-color-yellow tertiary-info-secondary-text">127.0.0.1</sup></span></a>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+  <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span8">
+                            <div class="hero-unit">
+                                <div style="">
+                                    <h1 class="fg-color-blueLight">Welcome !</h1>
+
+
+                                    <br />
+                                    <p>Hello ! and welcome to my website, do checkout my blog in which I post topics related to Linux, Cloud Computing, Web App Development ( Symfony2, Rails), etc</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                          <div class="span4">
+	                            <div class="span4 bg-color-blueLight padding30 text-center place-left" style="height: auto;">
+	                                <h2 class="fg-color-white">Blog</h2>
+	                            </div>
+
+			                      <div class="span4 bg-color-orange padding30 text-center place-left" style="height: auto;">
+			                      		<h2 class="fg-color-white">RSS</h2>
+
+			                      </div>
+
+  <div class="span4 bg-color-pink padding30 text-center place-left" style="height: auto;">
+	                                <h2 class="fg-color-white">Projects</h2>
+	                            </div>
+			                         <div class="span4 bg-color-greenLight padding30 text-center place-left" style="height: auto;">
+			                      		<h2 class="fg-color-white">Contact</h2>
+			                      </div>
+
+	                          
+                            </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                     
+                  
+ 
+
+
+
+           
+
+
+ <div class="header-bar">
+    <div class="header-bar-inner bg-color-darken" style="padding: 10px 10px 5px;">
+        <p class="tertiary-text fg-color-white">2012 &copy; <a class="fg-color-blueLight" href="mailto:vamsi@vamsii.com">Vamsi Krishna</a></p>
+    </div>
+</div>
+    </div>

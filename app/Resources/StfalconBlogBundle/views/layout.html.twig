@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Vamsi krishan personal website">
+    <meta name="author" content="Vamsi Krishna">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+
+<title>{% block title %}Vamsi - Welcome to yet another blog !{% endblock %}</title>
+        {% stylesheets '@VamsiiSiteBundle/Resources/public/css/*' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% javascripts '@VamsiiSiteBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+        <script type="text/javascript">
+    function getWindowsSize(){
+        $("#sizeX").html('W: '+$(window).width());
+        $("#sizeY").html('H: '+$(window).height());
+    }
+    $(function(){
+        getWindowsSize();
+        $(window).resize(function(){
+            getWindowsSize()
+        });
+    })
+</script>
+</head>
+
+<body class="modern-ui">
+        {% block content %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+</body>
+
+</html>
