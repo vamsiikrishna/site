@@ -1,3 +1,7 @@
 vamsii_site_homepage:
     pattern:  /
     defaults: { _controller: VamsiiSiteBundle:Default:index }
+
+vamsii_site_pull:
+    pattern:  /pull
+    defaults: { _controller: VamsiiSiteBundle:Default:pull }
