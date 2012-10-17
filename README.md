@@ -1,2 +1,1 @@
-test
-test2
+single page + blog app . Symfony2
