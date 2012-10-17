@@ -18,11 +18,19 @@ class DefaultController extends Controller
     			$request = $this->getRequest();
     			if ($request->getMethod() == 'POST') {
 
-    				$hosted_dir = $this->container->getParameter('hosted_dir');
-    				chdir($hosted_dir);
-    				$resp = shell_exec("git pull");
+
+ $message = \Swift_Message::newInstance()
+        ->setSubject('Deploy')
+        ->setFrom('vamsi@vamsii.com')
+        ->setTo('plutonium.vamsi@gmail.com')
+        ->setBody('Please login to your server and do a git pull')
+    ;
+    $this->get('mailer')->send($message);
+
+
+
     				$response = new Response();
-    				$response->setContent("$resp");
+    				$response->setContent("Please Deploy");
     				$response->setStatusCode(200);
     				$response->headers->set('Content-Type', 'text/html');
     				return $response;
