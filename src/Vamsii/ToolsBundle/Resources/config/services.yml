@@ -1,0 +1,7 @@
+parameters:
+#    vamsii_tools.example.class: Vamsii\ToolsBundle\Example
+
+services:
+#    vamsii_tools.example:
+#        class: %vamsii_tools.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

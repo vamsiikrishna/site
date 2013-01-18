@@ -1,0 +1,9 @@
+vamsii_tools_homepage:
+    pattern:  /hello/gg
+    defaults: { _controller: VamsiiToolsBundle:Default:index }
+
+vamsii_tools_yml_validator:
+    pattern: /tools/yml_validator/
+    defaults: { _controller: VamsiiToolsBundle:Default:yml }
+    requirements:
+       __method: GET|POST

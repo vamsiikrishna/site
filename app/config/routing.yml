@@ -1,3 +1,7 @@
+vamsii_tools:
+    resource: "@VamsiiToolsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 vamsii_site:
     resource: "@VamsiiSiteBundle/Resources/config/routing.yml"
     prefix:   /

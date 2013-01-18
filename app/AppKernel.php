@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Vamsii\SiteBundle\VamsiiSiteBundle(),
+            new Vamsii\ToolsBundle\VamsiiToolsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
